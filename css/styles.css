@@ -10,3 +10,34 @@ p {
   color: white;
   font-size: 30px;
 }
+#first{
+  height: 310px;
+  width:100%;
+}
+
+.bar-text{
+  height:50%;
+  width: 100%;
+}
+
+.bar-text2{
+  background-color: orange;
+  height: 50%;
+  width:100%;
+}
+
+.breakfast{
+background-image: url("../images/foodtop/breakfast.jpg");
+background-size: cover;
+ba
+}
+
+.lunch{
+  background-image: url("../images/foodtop/lunch.jpg");
+  background-size: cover;
+}
+
+.dinner{
+  background-image: url("../images/foodtop/dinner.jpg");
+  background-size: cover;
+}
