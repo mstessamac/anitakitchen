@@ -1,0 +1,12 @@
+.jumbotron {
+  background-image: url('../images/backgrounds/landing.jpg');
+}
+
+p {
+  font-style: "Times" serif;
+}
+
+#logotext {
+  color: white;
+  font-size: 30px;
+}
