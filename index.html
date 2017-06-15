@@ -6,64 +6,155 @@
   <title>Anita's Kitchen</title>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+<title> Anita's Kitchen</title>
+
 <body>
-    <div class="container-fluid">
-      <div class="row">
+  <div class="container-fluid">
+    <div class="row">
         <div class="jumbotron">
-          <div class="banner  text-center">
-            <img src="images/logoBig.png" alt="">
-            <p id="logotext">We Provide The Best Food<br>At The <strong>Right Price</strong></p>
-          </div>
+      <!--hamburger menu button -->
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="#">Contacts</a>
+          <a href="#">Events</a>
+          <a href="#">Menu</a>
         </div>
       </div>
 
-<div class="row" id="first">
-  <div class= "col-md-3">
-    <div class="bar-text">
-      <p> Happy Hour </p>
-    </div>
-    <div class="bar-text2">
-      <p> Party Time </p>
-    </div>
-  </div>
-  <div class= "col-md-3 breakfast">
-    <p> Breakfast </p>
-  </div>
-  <div class= "col-md-3 lunch">
-    <p> Lunch </p>
-  </div>
-  <div class= "col-md-3 dinner">
-    <p> Dinner</p>
-  </div>
-</div>
 
-      <div>
-        <img src="images/fastfood1.jpg" alt="">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="pageMenu"> &#9776; </span>
+
+      <script>
+        function openNav() {
+          document.getElementById("myNav").style.height = "100%";
+        }
+        function closeNav() {
+          document.getElementById("myNav").style.height = "0%";
+        }
+      </script>
+
+        <div class="banner text-center">
+          <img src="images/logoBig.png" alt="">
+          <p id="logotext">We Provide The Best Food<br>At The <strong>Right Price</strong></p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="row" id="first">
+      <div class="col-md-3 bar">
+        <div class= "row">
+          <h3 id="happyhour"> Happy Hour </h3>
+        </div>
+        <div class="row bar-text2">
+          <h3 id="partytime"> Party Time </h3>
+        </div>
+        
+      </div>
+      <div class="col-md-3 breakfast">
+        <h2> Breakfast </h2>
+      </div>
+      <div class="col-md-3 lunch">
+        <h2> Lunch </h2>
+      </div>
+      <div class="col-md-3 dinner">
+        <h2> Dinner</h2>
+      </div>
+    </div>
+
+
+    <!-- food description section -->
+    <div class="row">
+      <div class="col-md-6" id="fastfood">
+        <table>
+          <tr>
+            <td><img src="images/fastfood1.jpg" alt=""></td>
+          </tr>
+          <tr>
+            <td><img src="images/fastfood2.jpg" alt=""></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="col-md-6" id="fast-foodlorem">
+        <br>
         <h1> <em>Fast Food</em></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in c ulpa qui officia deserunt mollit anim id est laborum. </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in c ulpa qui officia deserunt mollit anim id est laborum. </p>
+        <button type="button" class="btn">Basic</button>
+        </br>
+      </div>
+    </div>
+
+
+    <div class="row drink">
+      <div class="col-md-6" <h2><em>Drinks</em></h2>
+        <h3><em> We also produce delicious drinks</strong></h3>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse .Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse </p>
         <button type="button" class="btn">Basic</button>
       </div>
 
-        <div>
-          <img src="images/drink1.jpg" alt="">
-          <h1> We also produce delicious drinks</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in c ulpa qui officia deserunt mollit anim id est laborum. </p>
-          <button type="button" class="btn">Basic</button>
-        </div>
+      <div class="col-md-6">
+        <table>
+          <tr>
+            <td><img src="images/drink1.jpg"></td>
+            <td><img src="images/drink2.jpg"></td>
+          </tr>
+        </table>
+      </div>
+    </div>
 
-          <div>
-            <div class="jumbotron">
-              <img src="images/dinner2.jpg" alt="">
-              <div class="row text-center">
-                <div class="col-md-4" >
-                </div>
-              </div>
-            </div>
+    <div class="row" id="navbar">
+
+      <!--nav tabs-->
+
+      <div class="container-fluid">
+        <nav id="gallery">
+          <ul class="nav nav-tabs" id="navTabs">
+            <li class="nav-item">
+              <a class="nav-Link" id="fastFood" href="#"><h4><strong>Fast Food</strong></h4></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="drinks" href="#"><h4><strong>Drinks</strong></h4></a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-link" id="chicken" href="#"><h4><strong>Chicken</strong></h4></a>
+            </li>
+            <li clas="nav-item">
+              <a class="nav-link" id="rice" href="#"><h4><strong>Rice</strong></h4></a>
+            </li>
+          </ul>
+          <div class="col-md-12" id="gallery">
+
+            <!--create tables to seperate images and create space between them-->
+
+
+                <table width=100%>
+                  <tr class="tableimages">
+                    <td><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><img src="images/fastfood/chickenBurger.jpg" alt="" class="img-responsive"> <br/>
+                      <h5>Chicken Burger</h5></td>
+                    </br>
+                    <td><img src="images/fastfood/beefBurger.jpg" alt="" class="img-responsive"> <br/>
+                      <h5> Beef Burger</h5></td>
+                    <td><img src="images/fastfood/chickenPizza.jpg" alt="" class="img-responsive"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true" <br/>
+                      <h5> Chicken Pizza</h5></td>
+
+                  </tr>
+                </table>
+
           </div>
+        </nav>
+      </div>
+
+
+
     </div>
 
 
@@ -71,21 +162,76 @@
 
 
 
+    <div class="customers">
+      <div class= "panel panel-default" id="panel">
+        <div class= "panel-body" id="panel-section">
+          <div class="col-md-8" id="happycustomers">
+            <h4> Our Happy Customer</h4>
+            <p>George Richard</p>
+          </br>
+            <p> Great food! Menu is awesome, their foods are not only great but also in the right price. I'll highly recommend them.:) </p>
+          </br>
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><img src="images/customers/p1.png">
+            <img src="images/customers/p2.png">
+            <img src="images/customers/p3.png"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true">
+          </div>
+        <div class="col-md-4">
+          <h4> About Menu </h4>
+          <p> We are menu a little team of 7 members. Ut wisksfjdfldk jfldjdl kfjldjfldjfdljfldjfdljfldjfljfdljfldfldjfjdlfjdljdhghgh hghgjkggjgjgjhgjh ghghghghghghghghghghghghghghghghghghghghghhg gggjhghghghhhhhhggguyttytyty ttyttytytytytytytytytytytytytyttfj
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="bottom banner">
+      <img src="images/backgrounds/subscribe.jpg" alt="" class="tomato_image">
+      <h1 class="daily_delivery"> Get our daily food items delivered to your email </h1>
+    </div>
+  </div>
+
+
+
+  <div class="footer1">
+    <div class="row" id="footer">
+      <div id="footer">
+        <h1><img src="images/logo_white.png" alt=""
+  </h1>
+        <p>That's What We Are</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="row">
+      <div id="footer">
+        <i class="fa fa-facebook"></i>
+        <img src="images/footerlogos/facebook.png" alt="">
+        <i class="fa fa-twitter"></i>
+        <img src="images/footerlogos/twitter.png" alt="">
+        <i class="fa fa-pinterest"></i>
+        <img src="images/footerlogos/pinterest.png" alt="">
+        <br>
+        <br>
+        <p> 2016 Menu Restaurant</p>
+        </br>
+        </br>
+        </footer>
+      </div>
+    </div>
+  </div>
 
 
 
 
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxccdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
-
-
-
-
-
-
-                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-                <script src="https://maxccdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </div>
 </body>
 
 </html>

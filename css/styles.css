@@ -1,5 +1,64 @@
+#pageMenu {
+  margin-left: 2%;
+}
+#pageMenu:hover {
+  color: #F0F8FF;
+}
+.overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #F15A29;
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    }
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
 .jumbotron {
   background-image: url('../images/backgrounds/landing.jpg');
+  border-radius: 0px;
+  margin-bottom: 0%;
 }
 
 p {
@@ -11,33 +70,205 @@ p {
   font-size: 30px;
 }
 #first{
-  height: 310px;
+  height: 150px;
   width:100%;
+  padding: 0;
+  margin:0;
+  margin-top: -100;
+}
+
+}
+.bar{
+  height:100%;
 }
 
 .bar-text{
-  height:50%;
-  width: 100%;
+  height:100%;
 }
 
-.bar-text2{
-  background-color: orange;
-  height: 50%;
-  width:100%;
+.box{
+  border: 25px;
+}
+
+
+
+}
+.text1{
+  text-align: right;
+}
+
+#happyhour {
+  padding: 7%;
+  margin: 0%;
+  text-align: center;
+  background-color: #F0F8FF;
+  color: black;
+  padding: 8%;
+margin: 0%;
+}
+#partytime{
+  padding:7%;
+    background-color: #F15A29;
+    margin: 0%;
+    text-align: center;
+    padding: 8%;
+}
+
+
+.btn-group button{
+  background-color: grey;
+  border: 1px solid;
+  padding: 10px 24px;
+  cursor: pointer;
+  float:left;
+  width: 100%;
+  color: white;
+}
+
+
+
+}
+#navbar{
+
+  background-image: url("../images/backgrounds/foodsBg.jpg");
+
+  background-position: center;
+}
+
+}
+button{
+  width: 25%;
+}
+
+.container{
+  border:2px solid brown;
+  width: 100%;
+  background-color: white;
+  margin: 50%;
+}
+}
+.people{
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+
+.customers{
+  border-left: 1px solid #d3d3d3;
+  border-top: 1px solid #d3d3d3;
+  padding-bottom: 20px;
+}
+
+.about_menu{
+  border-right: 1px solid #d3ded3;
+  border-top: 1px solid #d3d3d3;
+  padding-bottom: 20px;
 }
 
 .breakfast{
-background-image: url("../images/foodtop/breakfast.jpg");
-background-size: cover;
-ba
+  height:100%;
+  padding: 0;
+  margin:0;
+  background-image: url("../images/foodtop/breakfast.jpg");
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.customers_combination{
+  box-shadow: 0px 0px 10px #888888;
+  padding: 50px;
 }
 
 .lunch{
+  height:100%;
+  padding: 0;
+  margin:0;
   background-image: url("../images/foodtop/lunch.jpg");
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  padding: 4%;
+text-align: center;
 }
 
 .dinner{
+  height:100%;
+  padding: 5;
+  margin:0;
   background-image: url("../images/foodtop/dinner.jpg");
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+#gallery{
+  background-color: white;
+  text-align: center;
+}
+
+.tableImages td h5{
+  color: #F15A29;
+}
+
+
+.bottom{
+  position: relative;
+  text-align: center;
+}
+
+#customers{
+  text-align: center;
+  margin-top: 2%;
+  padding-left: 5%;
+  padding-right: 4%;
+}
+
+#customers h4{
+  color: #F15A29;
+}
+
+#customers p{
+  margin-top: 1%;
+}
+
+#menu{
+  margin-top: 2%;
+  text-align:center;
+}
+
+.daily_delivery{
+ color: white;
+ position: absolute;
+ top: 35%;
+ left: 25%;
+ font-size: 32px;
+}
+
+footer{
+  background-color: #F15A29;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+  font-style: normal;
+  font-family: serif;
+  padding-top: 10px;
+}
+
+footer h1{
+  font-size: 25px;
+  font-family: serif;
+}
+
+i {
+  color: #F15A29;
+  position:relative;
+  left: 25px;
 }
